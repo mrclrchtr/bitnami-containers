@@ -24,7 +24,7 @@ docker run --name keycloak bitnami/keycloak:latest
 * All Bitnami images available in Docker Hub are signed with [Notation](https://notaryproject.dev/). [Check this post](https://blog.bitnami.com/2024/03/bitnami-packaged-containers-and-helm.html) to know how to verify the integrity of the images.
 * Bitnami container images are released on a regular basis with the latest distribution packages available.
 
-Looking to use Keycloak in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the enterprise edition of Bitnami Application Catalog.
+Looking to use Keycloak in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the commercial edition of the Bitnami catalog.
 
 ## How to deploy Keycloak in Kubernetes?
 
@@ -102,7 +102,7 @@ docker build -t bitnami/APP:latest .
 | `KEYCLOAK_LOG_LEVEL`                                        | Keycloak log level                                                                                    | `info`                        |
 | `KEYCLOAK_LOG_OUTPUT`                                       | Keycloak log output                                                                                   | `default`                     |
 | `KEYCLOAK_ROOT_LOG_LEVEL`                                   | Keycloak root log level                                                                               | `INFO`                        |
-| `KEYCLOAK_PROXY`                                            | Keycloak type proxy                                                                                   | `passthrough`                 |
+| `KEYCLOAK_PROXY_HEADERS`                                    | Keycloak reverse proxy headers                                                                        | `nil`                         |
 | `KEYCLOAK_PRODUCTION`                                       | Run in production mode                                                                                | `false`                       |
 | `KEYCLOAK_EXTRA_ARGS_PREPENDED`                             | Run with flags which are applied directly to keycloak executable                                      | `nil`                         |
 | `KEYCLOAK_DATABASE_VENDOR`                                  | Database vendor                                                                                       | `postgresql`                  |
